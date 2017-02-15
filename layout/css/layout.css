@@ -1,0 +1,57 @@
+body{
+    background:black;
+}
+.main{
+    margin: 0 auto;
+    height: 120%;
+    width:20%;
+    background: white;
+}
+.main .sol{
+    width: 26%;
+    height: 100%;
+    background: white;
+     float: left;
+     margin-left:8%;
+}
+.main .orta{
+    width: 26%;
+    height: 100%;
+    background: white;
+    float: left;
+     margin-left:3%;     
+}
+.main .sag{
+    width: 26%;
+    height: 100%;
+    background: white;
+    float: right;
+    margin-right:8%;
+}
+.sekil{
+    height: 7%;
+    width: 100%;
+    background: green;
+    margin-top: 7%;
+}
+ .sekil_1{
+  height: 14%;
+    width: 100%;
+    background: green;
+    margin-top: 7%;  
+}
+.sekil_2{
+     height: 12%;
+    width: 100%;
+    background: green;
+    margin-top: 7%;
+}
+ .sekil_3{
+   height: 7.6%;
+    width: 100%;
+    background: green;
+    margin-top: 7%;   
+}
+.clear{
+    clear: both;
+}
