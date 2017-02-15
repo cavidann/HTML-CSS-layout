@@ -1,0 +1,35 @@
+body{
+
+    background:black;
+}
+.main{
+    margin: 0 auto;
+    height: 100%;
+    width:20%;
+    background: white;
+}
+.main .sol{
+    width: 26%;
+    height: 50%;
+    background: white;
+     float: left;
+     margin-left:8%;
+}
+.main .orta{
+    width: 26%;
+    height: 5%;
+    background: white;
+    float: left;
+     margin-left:3%;     
+}
+.main .sag{
+    width: 26%;
+    height: 5%;
+    background: white;
+    float: right;
+    margin-right:8%;
+}
+img{
+    width: 100%;
+    margin-top:8%;
+}
