@@ -1,0 +1,608 @@
+$yellow:#ffe915;
+$black:#484848;
+.bk-ylw{
+    background: $yellow;
+}
+body{
+    background: $black;
+    margin: 0px;
+    padding: 0px;
+    // *{
+    //     border: 1px solid;
+    // }
+    .my-md-20{
+        width: 20%;
+    }
+    .my-md-25{
+        width: 25%;
+    }
+    .my-md-80{
+        width: 80%;
+    }  
+    .my-md-50{
+        width: 50%;
+    } 
+    .my-md-75{
+        width:75%;
+    }
+    .my-md-100{
+        width: 100%;
+    } 
+    .height-100{
+        height: 100vh;
+    }
+    .mycontainer{
+        .left{
+            float: left;
+            overflow-y: scroll;
+            .picture{
+                position: relative;
+                img{
+                    width: 100%;
+                    
+                }
+                a{
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0px;
+                    color: white;
+                    background: $black;
+                    font-weight: bold;
+                    line-height: 43px;
+                    font-size: 14px;
+                    padding-left: 20px;
+                    transition: 1s;
+                    font-size: 17px;
+                    text-decoration:none!important;
+                    &:hover{
+                        text-decoration:none!important;
+                        letter-spacing: 7px;
+                    }
+                }
+            }
+            .tab-menu{
+                .nav{
+                    li.active{
+                        box-shadow: 0px 0px 0px;
+                        a{
+                            background: transparent;
+                        }
+                        &:hover{
+                        box-shadow: 0px 0px 0px;
+                        }
+                    }
+                    li{
+                        // box-shadow: 0px 0px 1px;
+                    box-shadow: 0px 2px 25px;
+                    transition: 0.5s;
+                        
+                        width: 20%;
+                        a{
+                            
+                            width: 100%;
+                            padding: 5px 0px;
+                            font-size: 32px;
+                            color: $black;
+                            border-radius: 0px;
+                            display: flex;
+                            justify-content: center;
+                            &:hover{
+                                background: transparent;
+                                color: $black;
+                            }
+                        }
+                        &:hover{
+                            box-shadow: 0px 0.1px 6px;
+                            background: transparent;
+                            color: $black;
+                        }
+                    }
+                }
+                .tab-content{
+                    padding: 0px 39px;
+                    .tab-pane{
+                        h4{
+                            text-transform: capitalize;
+                        }
+                        .content{
+                            // margin: 30px 0px;
+                            h5{
+                                color: white!important;
+                            }
+                            i{
+                                float: left;
+                                font-size: 50px;
+                                padding: 12px 18px 18px;
+                            }
+                            p{
+                                margin-bottom:-5px!important;
+                            }
+                            .progress{
+                                text-align: right;
+                                color: $black;
+                                display: inline-block;
+                                font-weight: 700;
+                                float: right;
+                                height: auto;
+                            }
+                            // .triangle_down{
+                            //     border-left: 8px solid transparent;
+                            //     border-right: 8px solid transparent;
+                            //     border-top: 8px solid black;
+                            //     float: right;
+                            //     margin-right: 12px; 
+                            //     margin-top: -20px;
+                            // }
+                            h1{
+                                font-size: 40px;
+                                font-style: normal;
+                                line-height: 46px;  
+                                margin-top: 60px !important;
+                            }
+                            .progress_defalut{
+                                // width: 100%;
+                                height: 8px;
+                                float: right;
+                                background: grey;
+                            }
+                            .progress_main{
+                                width: 0%;
+                                transition: 2s;
+                                height:100%;
+                                background: $black;
+                            }
+                            .skills{
+                                float: left;
+                                margin-top: -8px;
+                            }
+                        }
+                            
+                    }
+                }
+            }
+        }
+        .right{
+            float: right;
+            // *{
+            //         border: 1px solid;
+            //     }
+            .portfolio{
+                height: 100vh;
+                position: relative;
+            }
+           
+        }
+        .my-form{
+            form{
+                height: 100%;
+                .inputs{
+                    input{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#menu5{
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s!important;
+}
+.contact{
+    background: $yellow;
+    *{
+        color: $black;
+    }
+    input,textarea {
+    width: 100%!important;
+    box-sizing: border-box;
+        display: block;
+        border: 1px solid $black;
+        border-radius: 10px;
+        padding: 0px 10px;
+        &::-webkit-input-placeholder{
+            color: $black;
+        }
+    }
+    input{
+        &:focus{
+            border-bottom: 1px solid !important;
+            box-shadow: 0 0px 0 0 !important;
+        }
+    }
+    textarea,.send_btn{
+        &:focus{
+            outline: 0px;
+        }
+    }
+    .send_btn{
+        width: auto !important;
+        padding: 12px 30px;
+        margin-top: 14px;
+        background: $black;
+        color: $yellow;
+        font-size: 19px;
+        transition: 0.8s;
+        &:hover{
+            letter-spacing: 5px;
+        }
+    }
+}
+.tab-content>#menu4{
+display: block;
+opacity: 0;
+height: 0px;
+overflow: hidden;
+}
+.tab-content>#menu4.active{
+    opacity: 1;
+    height: auto;
+}
+.progress{
+    margin-bottom: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.0);
+}
+
+.portfolio{
+    // margin-left: 0;
+    height: 100%;
+    overflow-y: scroll;
+    .row, ul{
+        margin: 0px;
+    }
+    ul.grid{
+        padding: 0px;
+        li{
+            padding-top:10px; 
+        padding-bottom:10px; 
+        }
+        figure{
+            // background: $yellow;
+            *{
+                color: $yellow;
+            }
+        }
+    }
+    li{
+        overflow-y: scroll;
+        margin-bottom: 10px;
+        figure{
+            margin:0px;
+            overflow: hidden;
+            .single_image p{
+                margin-bottom: 0px;
+                transition: 0.8s;
+            }
+            .make-standart, h2{
+            transition: .8s;
+            }
+            &:hover{
+                .make-standart {
+                    transform: scale(1.2);
+                }
+                h2{
+                    letter-spacing: 10px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.contact{
+    .portfolio-nav{
+        ul{
+            padding: 0px;
+            margin: 0px;
+            li{
+            display: inline-block;
+            padding: 0px;
+            }
+        }
+    }
+    .left, .right{
+        height: 100%;
+    }    
+    .my-form{
+        height: 100%;
+    }
+}
+.fa-pause{
+    display: none
+}
+.voices{
+    padding-right: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+    background: $black;
+    line-height: 43px;
+    i{
+        transform: scale(1);
+        transition: 1s;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.8);
+        }
+    }
+    
+}
+.nav-pills>li+li {
+    margin-left: 0px; 
+}
+.tab-content>.tab-pane {
+    padding-bottom: 10px;
+}
+.portfolio-nav{
+    ul{
+        li{
+            color: $yellow;
+            overflow: auto;
+        }
+    }
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+.col.m3 {
+    width: 25%!important;
+}
+.filter.active{
+    letter-spacing: 2px!important;
+    font-weight: 700;
+}
+.pos{
+    right: 0px;
+    position: absolute;
+}
+.responsive-portfolio-show{
+    position: fixed;
+    top: 0px;    
+    left: 0px;
+    text-transform: capitalize;
+    z-index: 100;
+    display: none;
+}
+.pos,.responsive-portfolio-show{
+    // position: absolute;
+    top:0px;
+    text-align: center;
+    background: $black;
+    color: $yellow;
+    box-shadow: 0px 2px 25px;
+    transition: 0.5s;
+    cursor: pointer;
+    i{
+        padding: 6px 0px;
+        font-size: 32px;
+        color: $yellow;
+    }
+    &:hover{
+        box-shadow: 0px 0.1px 6px;
+        // background: transparent;
+        color: $yellow;
+    }
+}
+.pos.active{
+    box-shadow: 0px 0px 0px;
+    a{
+        background: transparent;
+    }
+    &:hover{
+    box-shadow: 0px 0px 0px;
+    }
+}
+// responsive queries
+@media only screen and (max-width:1600px){
+    .my-md-25{
+        width: 30%!important;
+    }
+    .my-md-75 {
+        width: 70%!important;
+    }
+    .col.m3 {
+        width: 33.3%!important;
+    }
+    figure{
+        &:hover{
+            h2{
+                letter-spacing: 8px!important;
+            }
+        }
+    }
+    .make-standart {
+        height: 124px!important;
+    } 
+}
+@media only screen and (max-width:1300px){
+    figure{
+        &:hover{
+            h2{
+                letter-spacing: 4px!important;
+            }
+        }
+    }
+       
+}
+@media only screen and (max-width:1120px){
+    .left .tab-menu .tab-content {
+        padding: 0px 25px!important;
+    }
+    figure{
+        &:hover{
+            h2{
+                letter-spacing: 2px!important;
+            }
+        }
+    }
+    .make-standart {
+        height: 102px;
+    }
+}
+@media only screen and (max-width:991px){
+    .left .tab-menu .tab-content {
+        padding: 0px 13px!important;
+    }
+    figure{
+        p{
+            padding-left:0px!important; 
+        }
+        p, h2{
+            text-align: left;
+        }
+    }
+    .make-standart {
+        height: 100px!important;
+    } 
+}
+@media only screen and (max-width:901px){
+    .my-md-25{
+        width: 36%!important;
+    }
+    .my-md-75{
+        width: 64%!important;
+    }
+    .col.m3 {
+        width: 50% !important;
+    }
+    .make-standart {
+        height: 120px!important;
+    }
+}
+@media only screen and (max-width:850px){
+    .make-standart {
+        height: 110px!important;
+    }
+}
+@media only screen and (max-width:716px){
+    .my-md-25{
+        width: 100%!important;
+    }
+    .my-md-75{
+        width: 100%!important;
+    }
+    .make-standart {
+        height: 140px !important;
+    }
+    .height-100,.right .portfolio {
+        height: auto!important;
+        overflow-y: auto;
+    }
+    body{
+        // position: relative;
+        background: $yellow;
+    }
+    body .mycontainer .left{
+        overflow-y: auto;
+        // position: absolute;
+        // top: 0px;
+        // z-index: 2;
+        // transition: 0.5s;
+    }
+    .mt{
+        margin-top: 40px;
+    }
+    .right{
+        display: none;
+        background: $black;
+        // position: absolute;
+        // top: 0px;
+        // opacity: 0;
+        // overflow: hidden;
+        // z-index: 1;
+        // transition: 0.5s
+    }
+    // .height-0{
+    //     height: 0px;
+    //     overflow: hidden;
+    // }
+    .responsive-portfolio-show{
+        display: block;
+    }
+}
+@media only screen and (max-width:630px){
+    .col.m3 {
+        width: 100% !important;
+    }
+    
+    .make-standart {
+        height: 290px !important;
+    }
+    figure{
+        &:hover{
+            h2{
+                letter-spacing: 10px!important;
+            }
+            .make-standart {
+                transform: scale(1.06)!important;
+            }
+        }
+    }
+}
+@media only screen and (max-width:580px){
+    .make-standart {
+        height: 264px !important;
+    }
+}
+@media only screen and (max-width:535px){
+    .make-standart {
+        height: 240px !important;
+    }
+}
+@media only screen and (max-width:478px){
+    .make-standart {
+        height: 216px !important;
+    }
+}
+@media only screen and (max-width:432px){
+    .make-standart {
+        height: 192px !important;
+    }
+}
+@media only screen and (max-width:390px){
+    .make-standart {
+        height: 168px !important;
+    }
+}
+@media only screen and (max-width:350px){
+    .make-standart {
+        height: 150px !important;
+    }
+}
+@media only screen and (max-width:303px){
+    .make-standart {
+        height: 128px !important;
+    }
+}
+figure{
+    p{
+        color: white!important;
+    }
+}
+
+#loading { background-color: $black; height: 100%; width: 100%; position: fixed; margin-top: 0px; top: 0px; left: 0px; bottom: 0px; overflow: hidden !important; right: 0px; z-index: 999999; }
+#loading-center { width: 100%; height: 100%; position: relative; }
+.loader { width: 3em; height: 3em; animation: loaderAnim 1.25s infinite; outline: 1px solid transparent; margin: auto; left: 0; right: 0; top: 0; bottom: 0;  position: absolute;}
+.loader #largeBox { height: 3em; width: 3em; border:4px solid $yellow; outline: 1px solid transparent; position: fixed; }
+.loader #smallBox { height: 3em; width: 3em; border:4px solid $yellow; position: fixed; z-index: 1; outline: 1px solid transparent; animation: smallBoxAnim 1.25s alternate infinite ease-in-out; }
+@keyframes smallBoxAnim {
+  0% { transform: scale(0.2); }
+  100% { transform: scale(0.75); }
+}
+@keyframes loaderAnim {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(90deg); }
+}
+
+//loader ends
